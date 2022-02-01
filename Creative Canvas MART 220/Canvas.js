@@ -11,4 +11,10 @@ function setup() {
       line(mouseX, mouseY, pmouseX, pmouseY);
     
     }
+    let myFont;
+    function preload() {
+      myFont = loadFont('assets');
+    }
+    
   }
+  
