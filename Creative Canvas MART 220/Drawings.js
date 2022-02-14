@@ -41,6 +41,12 @@ function screenFull() {
   fullscreen(!fs);
 }
 
+// Brush Size Slider
+function brushSizeSlider(){
+let sizeSlider = createSlider (1 , 32, 4, 0.1) 
+}
+
+
 function draw() {
     if (mouseIsPressed === true) {
         line(mouseX, mouseY, pmouseX, pmouseY);
