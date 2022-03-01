@@ -18,6 +18,13 @@ updatevalues(){
     this.previousX += random (5,10)
     this.previousY += random (5,10)
 
-console.log("text")
 }
+
+}
+
+function draw(){
+    if (mouseIsPressed === true) 
+    line(mouseX, mouseY, pmouseX, pmouseY); var move = new Movement(mouseX, mouseY, pmouseX, pmouseY) 
+        lines.push(move); } for(var i = 0; i < lines.length; i++) { lines[i].updatevalues(); lines[i].draw();
+
 }
