@@ -46,10 +46,20 @@ function brushSizeSlider(){
 let sizeSlider = createSlider (1 , 32, 4, 0.1) 
 }
 
+var movement
+var movementObjects = []
 
 function draw() {
     if (mouseIsPressed === true) {
         line(mouseX, mouseY, pmouseX, pmouseY);
-      
+        console.log(mouseX)
+        movement = new Movement (mouseX, mouseY, pmouseX, pmouseY)
+        movementObjects.push(movement)
+       // movement.updatevalues()
+     //   movement.draw()
+      }
+      for(var i = 0; i< movementObjects.length; i++){
+        movementObjects[i].updatevalues()
+        movementObjects[i].draw()
       }
   }

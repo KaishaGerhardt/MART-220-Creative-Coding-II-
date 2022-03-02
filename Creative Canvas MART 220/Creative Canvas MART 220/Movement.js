@@ -1,3 +1,12 @@
+//Movement of lines
+
+var move =  []
+var lines
+var x = 100
+var y = 100
+var currentX = x
+var currentY = y
+
 class Movement{
 
     constructor(currentX, currentY, previousX, previousY)
@@ -9,15 +18,14 @@ class Movement{
     }
 
  draw() {
-  line(currentX, currentY, previousX, previousY)   
+  line(this.currentX, this.currentY, this.previousX, this.previousY)   
     }
     
 updatevalues(){
-    this.currentX += random(5,10)
+    this.currentX += random(5,10) 
     this.currentY += random(5,10)
     this.previousX += random (5,10)
     this.previousY += random (5,10)
 
-console.log("text")
 }
 }
